@@ -18,7 +18,7 @@ slowMath.add(6, 2)
     }).then((result) => {
         console.log('part six starts here');
         console.log(result);
-        return slowMath.divide(result, 2);
+        return slowMath.remainder(result, 2);
     }).then((result) => {
         console.log('part seven');
         console.log(result);
@@ -26,11 +26,11 @@ slowMath.add(6, 2)
     }).then((result) => {
         console.log('part eight');
         console.log(result);
-        return slowMath.divide(result, 40);
+        return slowMath.remainder(result, 40);
     }).then((result) => {
         console.log('part nine');
         console.log(result);
-        return slowMath.add(result, 30);
+        return slowMath.add(result, 32);
     }).then((result) => {
         console.log(`the final answer is ${result}`);
     }).catch(() => {
